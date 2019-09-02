@@ -1,38 +1,18 @@
 //bring in the normalizer stylesheet to base styles
 @import './_normalize.scss';
 
-// CSS variables. Make them CSS variables to keep the option open for theming
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,700,700i&display=swap');
+
 :root {
-  --colorPrimaryBase: #073451;
-  --colorPrimaryLight: #214E6B;
-  --colorPrimaryDark: #001B38;
-  --colorPrimaryTrans: rgba(7, 51, 80, 0.5);
-  --colorSecondaryBase: #e3761c;
-  --colorSecondaryLight: #FD9036;
-  --colorSecondaryDark: #CA5D03;
-  --colorSecondaryTrans: rgba(227, 118, 28, 0.5);
-  --colorFormInputPlaceholder: rgba(#707070, .5);
-  --colorFormInputFontColor: #474747;
+  --colorPrimaryBase: #000;
+  --baseFont: 'Open Sans', sans-serif;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Helvetica';
-  color: #474747;
-  font-weight: 300;
+  font-family: var(--baseFont);
+  color: black;
+  font-weight: 400;
   text-rendering: optimizelegibility;
-}
-
-//make the app full screen so we can flexbox items
-html {
-  height: 100vh;
-}
-
-body {
-  height: 100vh;
-
-  //having trouble targeting #root. It is always the first child of body so we will target it that way
-  >div {
-    height: 100vh;
-  }
+  line-height: 1.5;
 }
