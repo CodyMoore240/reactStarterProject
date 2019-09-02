@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). A quick way to get up and running with React/Redux.
+
+## Getting Started
+
+Copy the files into a directory and type `npm install` in the console.
 
 ## Available Scripts
 
